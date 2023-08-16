@@ -7,13 +7,15 @@
     scroll-behavior: smooth;
 }
 body{
-    min-height: 100vh;
+    height: 100vh;
+    
     background:linear-gradient(180deg, #000000 0%,#9B48A7 100%);
     color: #ffffff;
     overflow-x: hidden;
+    pointer-events: none;
     
 }
-.container{
+.container1{
     position: sticky;
     top: 0;
     padding: 10px 10%;
@@ -21,7 +23,7 @@ body{
     /* backdrop-filter: invert(1); */
     
 }
-.container::after{
+.container1::after{
     content: '';
     background: linear-gradient(to top,#000000,transparent);
 
@@ -105,6 +107,7 @@ section::before{
     z-index: -1;
     top: -60px;
     object-fit: contain;
+    pointer-events: none;
 }
 #text{
     z-index: 4;
@@ -132,9 +135,9 @@ section::before{
 .sec{
     position: relative;
     padding: 100px;
-    height: 100vw;
+    height: 50vw;
     background: #481c4f;
-    z-index: -1;
+    
 
 }
 .sec h2{
@@ -197,7 +200,7 @@ section::before{
     
 }
 .footer-distributed{
-	background: #444;
+	background: #210027;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -207,10 +210,10 @@ section::before{
 	overflow: hidden;
 }
 
-section {
+.section1 {
   width: 100%;
   display: inline-block;
-  background: #ccc;
+  background: #000000;
   height: 60vh;
   text-align: center;
   font-size: 22px;
